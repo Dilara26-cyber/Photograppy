@@ -1,0 +1,85 @@
+.Hero {
+  height: 100vh;
+}
+
+.hero_bg {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center right;
+     object-position: center right;
+  position: absolute;
+  top: 0;
+  background-image: url(https://images.pexels.com/photos/3745234/pexels-photo-3745234.jpeg?cs=srgb&dl=pexels-alex-conchillos-3745234.jpg&fm=jpg);
+  background-size: cover;
+  z-index: 2;
+}
+
+.hero_bg::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+}
+
+.glass {
+  width: 90%;
+  height: 85%;
+  min-width: 10rem;
+  min-height: 8rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(4, 4, 4, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(4, 4, 4, 0.37);
+  z-index: 3;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  border-radius: 20px;
+}
+
+.hero__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+
+.hero__img {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.hero__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-transform: skewY(186deg);
+          transform: skewY(186deg);
+  border-radius: 10px;
+}
+
+.hero__img__one {
+  position: absolute;
+}
+
+.hero__img__two {
+  -webkit-transform: skew(20deg);
+          transform: skew(20deg);
+  z-index: 2;
+}/*# sourceMappingURL=Hero.css.map */
